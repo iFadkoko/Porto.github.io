@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="m8evz7CCZephaoJicnAg2oPPIhdIAxCEF4Zvic5J">
+
+    <title>Login Siswa &bull; KIP Kuliah</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/safari-pinned-tab.svg&quot; color=&quot;#5bbad5">
+    <link rel="shortcut icon" href="https://kip-kuliah.kemdikbud.go.id/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">    <meta name="theme-color" content="#eeeeee">
+
+    <link href="https://kip-kuliah.kemdikbud.go.id/css/app.css?v=1.4.1" rel="stylesheet">
+    <link href="https://kip-kuliah.kemdikbud.go.id/css/style.css?v=1.3" rel="stylesheet">
+    <meta name="keywords" content="Login Siswa">
+<meta name="description" content="Login bagi siswa yang sudah mempunyai akun KIP Kuliah">
+
+<link href="https://kip-kuliah.kemdikbud.go.id/css/icons.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>
+        <style>
+            #app {
+                display: none;
+            }
+        </style>
+        <div>
+            <h3>Untuk kelancaran dalam menggunakan aplikasi, mohon aktifkan Javascript.</h3>
+        </div>
+    </noscript>
+    <div id="app" class="misc-wrapper">
+        <div class="misc-content">
+            <div class="container">
+                    <div class="row justify-content-center">
+        <div class="col-md-12 text-center mb-3">
+            <a href="https://kip-kuliah.kemdikbud.go.id" title="Kembali ke Dashboard">
+                <img alt="" src="https://kip-kuliah.kemdikbud.go.id/img/logo.png" class="logo-icon margin-r-10"> 
+            </a>
+            <h3>KARTU INDONESIA PINTAR KULIAH</h3>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="misc-box">
+                                <form id="main-form" role="form" method="POST" action="https://kip-kuliah.kemdikbud.go.id/siswa/auth/login">
+                    <input type="hidden" name="_token" value="m8evz7CCZephaoJicnAg2oPPIhdIAxCEF4Zvic5J" autocomplete="off">                    <div class="form-group">
+                        <label for="no_pendaftaran">No. Pendaftaran</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i> </span>
+                            </div>
+                            <input id="no_pendaftaran" name="no_pendaftaran" type="text" value="" placeholder="No. Pendaftaran" class="form-control " required>
+                            <!--<span class="icon-user text-muted icon-input"></span>-->
+                        </div>
+                                            </div>
+                    <div class="form-group">
+                        <label for="kode_akses">Kode Akses</label>
+                        <div class="input-group" id="show_hide_password">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i> </span>
+                            </div>
+                            <input id="kode_akses" name="kode_akses" type="password" placeholder="Kode Akses" class="form-control " required>
+                            <div class="input-group-append">
+                                <button class="input-group-text" type="button" tabindex="-1"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                                                <div class="text-left">
+                            <a href="https://kip-kuliah.kemdikbud.go.id/siswa/pendaftaran/resend-email" class="btn btn-xs btn-link">Lupa No. Pendaftaran/Kode Akses?</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-flat btn-primary btn-block"><i class="fas fa-sign-in-alt"></i> Masuk</button>
+                        </div>
+                        <div class="border border-primary rounded mt-2 p-2 text-center">
+                            Belum punya akun? <a href="https://kip-kuliah.kemdikbud.go.id/siswa/pendaftaran/baru">Daftar baru</a>
+                        </div>
+                    </div>
+                    <hr class="my-1"> 
+                    <div class="text-center" style="font-size: 0.85rem;">
+                        Belum menerima email akun? <a href="https://kip-kuliah.kemdikbud.go.id/siswa/pendaftaran/resend-email">Kirim ulang email</a><br/>
+                        Sudah daftar tapi salah input email? <a href="https://kip-kuliah.kemdikbud.go.id/siswa/auth/claim-account">Klaim akun saya</a><br/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+                <div class="row justify-content-center misc-footer">
+                    <div class="col-md-6 col-sm-12">
+                        <p class="small text-center">
+                            &copy; 2024 
+                            <span id="program-info-text" title="KIPK">
+                                KIP Kuliah
+                            </span>|
+                            <span id="lembaga-info-text" title="Pusat Layanan Pembiayaan Pendidikan; Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi Republik Indonesia">
+                                Puslapdik, Kemdikbudristek RI
+                            </span>
+                        </p>
+                    </div>
+				</div>
+            </div>
+        </div>
+    
+
+        <!-- Scripts -->
+        <script src="https://kip-kuliah.kemdikbud.go.id/js/jquery-3.7.0.min.js"></script>
+        <script src="https://kip-kuliah.kemdikbud.go.id/js/submit-loader.js?v=1.0" defer></script>
+        <script src="https://kip-kuliah.kemdikbud.go.id/js/reg-serviceworker.js"></script>
+        <!-- Start of kip-kuliah Zendesk Widget script -->
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=23d014a9-7387-45c1-9931-60202f091520"> </script>
+        <!-- End of kip-kuliah Zendesk Widget script -->
+        <script src="https://kip-kuliah.kemdikbud.go.id/vendor/sweetalert/sweetalert.all.js?v=11.7.20"></script>
+
+        <script src="https://kip-kuliah.kemdikbud.go.id/lib/jquery-validate/jquery.validate.min.js"></script>
+<script src="https://kip-kuliah.kemdikbud.go.id/lib/select2/js/select2.min.js"></script>
+<script src="https://kip-kuliah.kemdikbud.go.id/js/jquery.inputmask.bundle.min.js?v=3.3.11"></script>
+<script src="https://kip-kuliah.kemdikbud.go.id/js/kipk.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#show_hide_password button").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_password input').attr("type") == "text"){
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password i').addClass( "fa-eye" );
+                $('#show_hide_password i').removeClass( "fa-eye-slash" );
+            }else if($('#show_hide_password input').attr("type") == "password"){
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password i').removeClass( "fa-eye" );
+                $('#show_hide_password i').addClass( "fa-eye-slash" );
+            }
+        });
+        $('#no_pendaftaran').inputmask("9{4}.[A|9]{3}.9{5}.9{4}.9{3}");
+    });
+</script>
+    </div>
+</body>
+</html>

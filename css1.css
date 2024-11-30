@@ -1,0 +1,24 @@
+.BOX{
+    width: 750px;
+    height: 500px;
+    margin: 100px 100px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightgray;
+    border-top: 5px solid rgb(209, 14, 0);
+    border-bottom: 5px solid rgb(0, 11, 11);
+    border-radius: 15px;
+}
+
+img{
+    position: relative;
+    bottom: 200px;
+    left: 385px;
+    border-radius: 15px;
+}
+.top{
+    position: relative;
+    top: 65px;
+    margin: 50px 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
